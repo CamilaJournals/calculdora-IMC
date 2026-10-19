@@ -10,57 +10,69 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: linear-gradient(135deg, #e0f2f1, #e8eaf6);
+    font-family: "Montserrat", "Times New Roman", serif;
+    font-weight: 300;
+    background: #f3eee6;
 }
 
 .container {
     width: 100%;
     max-width: 400px;
-    padding: 32px 28px;
-    background: #ffffff;
+    padding: 36px 30px;
+    background: #fbf8f3;
+    border: 1px solid #e6dccd;
     border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 10px 30px rgba(94, 66, 40, 0.12);
 }
 
 h1 {
-    margin-bottom: 24px;
-    font-size: 1.6rem;
+    margin-bottom: 26px;
+    font-size: 1.5rem;
+    font-weight: 500;
     text-align: center;
-    color: #2c3e50;
+    color: #5a4030;
 }
 
 label {
     display: block;
     margin-bottom: 6px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #455a64;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #7a6048;
 }
 
 input {
     width: 100%;
     margin-bottom: 18px;
     padding: 12px 14px;
+    font-family: inherit;
     font-size: 1rem;
-    border: 2px solid #cfd8dc;
+    font-weight: 300;
+    color: #5a4030;
+    background: #ffffff;
+    border: 1.5px solid #e0d3bf;
     border-radius: 8px;
     outline: none;
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
+input::placeholder {
+    color: #b3a18c;
+}
+
 input:focus {
-    border-color: #26a69a;
-    box-shadow: 0 0 0 3px rgba(38, 166, 154, 0.2);
+    border-color: #a8703a;
+    box-shadow: 0 0 0 3px rgba(168, 112, 58, 0.18);
 }
 
 button {
     width: 100%;
     padding: 13px;
+    font-family: inherit;
     font-size: 1rem;
-    font-weight: 600;
-    color: #ffffff;
-    background: #26a69a;
+    font-weight: 500;
+    color: #fbf8f3;
+    background: #a06a32;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -68,7 +80,7 @@ button {
 }
 
 button:hover {
-    background: #1e8e83;
+    background: #85552a;
 }
 
 button:active {
@@ -76,16 +88,17 @@ button:active {
 }
 
 #ResultadoIMC {
-    margin-top: 24px;
-    font-size: 1.4rem;
-    font-weight: 700;
+    margin-top: 26px;
+    font-size: 1.25rem;
+    font-weight: 600;
     text-align: center;
-    color: #2c3e50;
+    color: #5a4030;
 }
 
 #ClassificacaoIMC {
     margin-top: 6px;
-    font-size: 1.05rem;
+    font-size: 1rem;
+    font-weight: 300;
     text-align: center;
-    color: #546e7a;
+    color: #8a7058;
 }
