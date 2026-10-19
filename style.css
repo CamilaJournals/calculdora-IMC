@@ -10,9 +10,9 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    font-family: "Montserrat", "Times New Roman", serif;
+    font-family: "Times New Roman", serif;
     font-weight: 300;
-    background: #f3eee6;
+    background: url("fundo.jpg") center / cover no-repeat fixed;
 }
 
 .container {
