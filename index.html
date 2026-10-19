@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora IMC</title>
     <script src="calculadora.js"></script>
+    <link rel="styllesheet" href="style.css">
+
 </head>
 
 <body>
     <div class="container">
         <h1> Calculadora de IMC</h1>
         <label for="peso"> Peso (em Kg)</label>
-        <input type="number" id="Peso" placeholder="Digite aqui seu peso" required>
+        <input type="number" id="Peso" step="0.1" placeholder="Digite aqui seu peso" required>
         <label for="altura"> Altura (em M)</label>
-        <input type="number" id="Altura" placeholder="Digite aqui sua altura" required>
+        <input type="number" id="Altura" step="0.01" placeholder="Digite aqui sua altura" required>
 
         <button onclick="calcularImc()" id="calcular">Calcular IMC</button>
 
         <p id="ResultadoIMC"></p>
+        <p id="ClassificacaoIMC"></p>
 
     </div>
 

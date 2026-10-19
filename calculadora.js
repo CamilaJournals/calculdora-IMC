@@ -2,8 +2,31 @@ function calcularImc() {
     let valorPeso = document.getElementById("Peso").value;
     let valorAltura = document.getElementById("Altura").value;
 
+    if (valorPeso <= 0 || valorAltura <= 0) {
+        document.getElementById("ResultadoIMC").textContent = "Por favor, insira valores válidos para peso e altura.";
+        documento.getElementById("ClassificacaoIMC").textContent = "";
+        return;
+    }
+
     let calculoAltura = (valorAltura * valorAltura);
     let valorImc = valorPeso / calculoAltura;
 
-    document.getElementById("ResultadoIMC").textContent = "Seu IMC é igual a: " + valorImc;
+    let classificacao = "";
+
+    if (valorImc < 18.5) {
+        classificacao = "Abaixo do peso";
+    } else if (valorImc >= 18.5 && valorImc < 24.9) {
+        classificacao = "Peso normal";
+    } else if (valorImc >= 25 && valorImc < 29.9) {
+        classificacao = "Sobrepeso";
+    } else if (valorImc >= 30 && valorImc < 34.9) {
+        classificacao = "Obesidade grau 1";
+    } else if (valorImc >= 35 && valorImc < 39.9) {
+        classificacao = "Obesidade grau 2";
+    } else {
+        classificacao = "Obesidade grau 3";
+    }
+
+    document.getElementById("ResultadoIMC").textContent = "Seu IMC é igual a: " + valorImc.toFixed(2);
+    document.getElementById("ClassificacaoIMC").textContent = "Classificação: " + classificacao;
 }
