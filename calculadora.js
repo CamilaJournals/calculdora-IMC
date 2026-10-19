@@ -41,5 +41,5 @@ function aoApertarEnter(event) {
     }
 }
 
-document.getElementById("peso").addEventListener("keypress", aoApertarEnter);
-document.getElementById("altura").addEventListener("keypress", aoApertarEnter);
+document.getElementById("peso").addEventListener("keydown", aoApertarEnter);
+document.getElementById("altura").addEventListener("keydown", aoApertarEnter);
