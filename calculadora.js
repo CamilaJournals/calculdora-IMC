@@ -29,4 +29,17 @@ function calcularImc() {
 
     document.getElementById("ResultadoIMC").textContent = "Seu IMC é igual a: " + valorImc.toFixed(2);
     document.getElementById("ClassificacaoIMC").textContent = "Classificação: " + classificacao;
+    
+    document.getElementById("peso").value = "";
+    document.getElementById("altura").value = "";
+    document.getElementById("peso").focus();
 }
+
+function aoApertarEnter(event) {
+    if (event.key === "Enter") {
+        calcularImc();
+    }
+}
+
+document.getElementById("peso").addEventListener("keypress", aoApertarEnter);
+document.getElementById("altura").addEventListener("keypress", aoApertarEnter);
