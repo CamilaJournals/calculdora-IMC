@@ -15,13 +15,13 @@ function calcularImc() {
 
     if (valorImc < 18.5) {
         classificacao = "Abaixo do peso";
-    } else if (valorImc >= 18.5 && valorImc < 24.9) {
+    } else if (valorImc >= 18.5 && valorImc < 24.99) {
         classificacao = "Peso normal";
-    } else if (valorImc >= 25 && valorImc < 29.9) {
+    } else if (valorImc >= 25 && valorImc < 29.99) {
         classificacao = "Sobrepeso";
-    } else if (valorImc >= 30 && valorImc < 34.9) {
+    } else if (valorImc >= 30 && valorImc < 34.99) {
         classificacao = "Obesidade grau 1";
-    } else if (valorImc >= 35 && valorImc < 39.9) {
+    } else if (valorImc >= 35 && valorImc < 39.99) {
         classificacao = "Obesidade grau 2";
     } else {
         classificacao = "Obesidade grau 3";
